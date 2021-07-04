@@ -13,6 +13,6 @@ class Solution{
                 mp[nums[i]]=1;
             }
          }
-         return count;
+        return res;
      }
-};
+}
