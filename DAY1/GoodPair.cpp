@@ -1,16 +1,16 @@
 class Solution{
  public:
-     int numIdenticalPairs(vector<int>&nums)
+     int numIdenticalPairs(vector<int>&arr)
      {
-         int cout=0;
+         int count=0;
          map <int,int>mp;
-         for(int i=0;i<nums.size();i++){
-            if(mp.count(nums[i])){
-                count+=mp[nums[i]];
-                mp[nums[i]]++;
+         for(int i=0;i<arr.size();i++){
+            if(mp.count(arr[i])){
+                count+=mp[arr[i]];
+                mp[arr[i]]++;
             }
             else{
-                mp[nums[i]]=1;
+                mp[arr[i]]=1;
             }
          }
         return res;
